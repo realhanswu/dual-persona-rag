@@ -160,21 +160,21 @@ dual-persona-rag/
           └────────────────┬─────────────────┘
                            │
          ┌─────────────────▼──────────────────────────┐
-         │              EVALUATION PIPELINE             │
-         │                                              │
-         │  Stage 1: Retrieval                          │
+         │              EVALUATION PIPELINE            │
+         │                                             │
+         │  Stage 1: Retrieval                         │
          │    FP3 · Recall · Precision@K · MRR · NDCG  │
-         │                                              │
-         │  Stage 2: Generation                         │
+         │                                             │
+         │  Stage 2: Generation                        │
          │    FP4 (gate) · FP7 · FP6 · BERTScore-F1    │
          │    LLM Judge (Faith · Corr · Rel · CtxRel)  │
-         │                                              │
-         │  Stage 3: Persona Adherence (PAS)            │
-         │    Tone · Structure · Audience · Constraints │
-         │                                              │
-         │  Composite (6-component) → Faithfulness Gate │
-         │  Combined Score (75% ENG + 25% MKT)          │
-         │  Verdict: GO / NO-GO                         │
+         │                                             │
+         │  Stage 3: Persona Adherence (PAS)           │
+         │    Tone · Structure · Audience · Constraints│
+         │                                             │
+         │  Composite (6-component) → Faithfulness Gate│
+         │  Combined Score (75% ENG + 25% MKT)         │
+         │  Verdict: GO / NO-GO                        │
          └─────────────────────────────────────────────┘
 ```
 
