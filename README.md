@@ -47,7 +47,7 @@ A proof-of-concept demonstrating that a single RAG pipeline, with dual-persona p
 ```
 dual-persona-rag/
 │
-├── README.md                        # This file
+├── README.md                      
 ├── requirements.txt                 # Python dependencies
 ├── .env.example                     # Environment variable template
 │
