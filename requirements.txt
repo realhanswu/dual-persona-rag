@@ -1,0 +1,66 @@
+# ══════════════════════════════════════════════════════════════════
+# persona-lens — requirements.txt
+# Python 3.10+  |  GPU recommended (CUDA 11.8+)
+# Install: pip install -r requirements.txt
+# ══════════════════════════════════════════════════════════════════
+
+# ── Core ML & LLM ─────────────────────────────────────────────────
+torch>=2.1.0
+transformers>=4.40.0
+accelerate>=0.28.0
+bitsandbytes>=0.43.0          # 4-bit quantisation for Mistral-7B
+
+# ── Sentence Transformers & Embeddings ────────────────────────────
+sentence-transformers>=2.6.0  # multi-qa-mpnet-base-dot-v1
+tokenizers>=0.19.0
+
+# ── LangChain Ecosystem ───────────────────────────────────────────
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-core>=0.2.0
+langchain-huggingface>=0.0.3
+
+# ── Vector Store ──────────────────────────────────────────────────
+qdrant-client>=1.9.0
+
+# ── Retrieval ─────────────────────────────────────────────────────
+rank-bm25>=0.2.2              # BM25 hybrid search (experimental)
+
+# ── Generation Metrics ────────────────────────────────────────────
+bert-score>=0.3.13            # BERTScore F1 / Precision / Recall
+evaluate>=0.4.1               # HuggingFace evaluate hub
+
+# ── Scientific Stack ──────────────────────────────────────────────
+numpy>=1.26.0
+scikit-learn>=1.4.0           # cosine_similarity, pairwise metrics
+scipy>=1.12.0
+
+# ── Document Loaders ──────────────────────────────────────────────
+pypdf>=4.2.0                  # PDF loading
+arxiv>=2.1.0                  # ArXiv paper fetching
+wikipedia>=1.4.0              # Wikipedia article loading
+beautifulsoup4>=4.12.0        # HTML/web article parsing
+requests>=2.31.0
+
+# ── Data Handling ─────────────────────────────────────────────────
+pandas>=2.2.0
+pydantic>=2.6.0               # RAGExperimentConfig dataclass validation
+
+# ── Experiment Tracking ───────────────────────────────────────────
+python-dotenv>=1.0.0          # .env loading
+
+# ── Notebook & Visualisation ──────────────────────────────────────
+jupyter>=1.0.0
+ipykernel>=6.29.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.20.0
+tqdm>=4.66.0
+
+# ── Testing ───────────────────────────────────────────────────────
+pytest>=8.1.0
+pytest-cov>=5.0.0
+
+# ── Code Quality ──────────────────────────────────────────────────
+black>=24.3.0
+ruff>=0.3.0
